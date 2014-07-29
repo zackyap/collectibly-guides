@@ -1,0 +1,169 @@
+// Custom colors
+$collectiblyCyan: darken(#65cea7, 15%);
+$collectiblyBlue: #448ccb;
+$collectiblyPurple: #605ca9;
+$collectiblyGreen: #3cb878;
+$collectiblyYellow: #fff568;
+$collectiblyOrange: #f78e56;
+$collectiblyRed: #db5846;
+$collectiblyGold: #da9100;
+$collectiblySilver: #bcc6cc;
+
+$collectiblyLightBlue: lighten($collectiblyBlue, 5%);
+$collectiblyLightestBlue: lighten($collectiblyBlue, 25%);
+
+$paleYellow: #FFFAB8;
+$skyBlue: #56B7BC;
+$facebookblue: #4762A0;
+
+// Text Color
+$linkColor: $collectiblyBlue;
+$darkText: #393939;
+$midText: #565a5c;
+$lightText: #858585;
+$lighterText: #dddddd;
+$lightestText: #f4f4f4;
+$lighterMidText: #686868;
+$formGray: #fcfcfc;
+$header: #49586e;
+
+// Border Color
+$borderGray: #e6e7e8;
+$darkBorderGray: #d9d9d9;
+$darkerBorderGray: #c9c9c9;
+$borderColor: $borderGray;
+
+// Background Color
+$backgrdColor: #edece3;
+$navBg: white;
+
+// Variables Customization
+$baseFontSize: 13px;
+$navbarHt: 50px;
+
+// Div Widths
+$phonewpadding: 260px;
+
+
+// Default, 940px
+// -------------------------
+$gridColumnWidth:         60px;
+$gridGutterWidth:         20px;
+
+// Portrait tablet to default desktop
+// -------------------------
+$gridColumnWidthTablet:   42px;
+$gridGutterWidthTablet:   20px;
+
+// Large desktop and up
+// -------------------------
+$gridColumnWidthLarge:    70px;
+$gridGutterWidthLarge:    30px;
+
+// Default
+// -------------------------
+$fluidGridColumnWidth:         8.333333334%;
+$fluidGridGutterWidth:         0%;
+
+// Portrait tablet to default desktop
+// -------------------------
+$fluidGridColumnWidthTablet:   8.333333334%;
+$fluidGridGutterWidthTablet:   0%;
+
+// Large desktop and up
+// -------------------------
+$fluidGridColumnWidthLarge:    8.333333334%;
+$fluidGridGutterWidthLarge:    0%;
+
+// Font Family
+$neuton: "Neuton", "Georgia", Cambria, "Times New Roman",Times,serif;
+$calluna: "calluna", "Georgia", Cambria, "Times New Roman",Times,serif;
+
+// Mixins
+@mixin border_radius($radius:6px) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box_shadow($p1: 1px, $p2: 1px, $p3: 1px, $color: #ddd) {
+  -moz-box-shadow: $p1 $p2 $p3 $color;
+  -webkit-box-shadow: $p1 $p2 $p3 $color;
+  box-shadow: $p1 $p2 $p3 $color;
+}
+
+@mixin no_box_shadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@mixin card_shadow {
+  // Pinterest Style
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin bg-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Transitions
+
+@mixin all-transitions($time: 0.3s, $timing: linear) {
+  -webkit-transition: all $time $timing;
+  -o-transition: all $time $timing;
+  -moz-transition: all $time $timing;
+  -ms-transition: all $time $timing;
+  -kthtml-transition: all $time $timing;
+  transition: all $time $timing;
+}
+
+@mixin background-transition($time: 0.3s, $timing: ease) {
+  -webkit-transition: background-color $time $timing;
+  -o-transition: background-color $time $timing;
+  -moz-transition: background-color $time $timing;
+  -ms-transition: background-color $time $timing;
+  -kthtml-transition: background-color $time $timing;
+  transition: background-color $time $timing;
+}
+
+@mixin placeholder-color($color: $lightText) {
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: $color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $color;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $color;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $color;
+  }
+}
+
+@mixin placeholder-weight($weight: 400) {
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    font-weight: $weight;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-weight: $weight;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-weight: $weight;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-weight: $weight;
+  }
+}

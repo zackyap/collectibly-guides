@@ -1,0 +1,41 @@
+- cache "footer" do
+  #footer
+    .footer-columns
+      .footer-column
+        .footer-header Company
+        .footer-text-link= link_to "About", "http://www.collectib.ly/about", target: "_blank"
+        .footer-text-link= link_to "Collectibly Main", "http://www.collectib.ly", target: "_blank"
+        .footer-text-link= link_to "Blog", "http://blog.collectib.ly", target: "_blank"
+        .footer-text-link= link_to "Terms", "http://www.collectib.ly/about/terms", target: "_blank"
+        .footer-text-link= link_to "Privacy", "http://www.collectib.ly/privacy", target: "_blank"
+      .footer-column
+        .footer-header Discover
+        .footer-text-link= link_to "Members", "www.collectib.ly/explore/users", target: "_blank"
+        .footer-text-link= link_to "Collections", "www.collectib.ly/explore/collections", target: "_blank"
+        .footer-text-link= link_to "Items", "www.collectib.ly/explore/items", target: "_blank"
+      .footer-column
+        .footer-header More
+        .footer-text-link= link_to "Contributors", "www.collectib.ly/about/contributors", target: "_blank"
+        
+      .footer-column
+        .footer-header.follow Community
+        .footer-contact
+          = link_to "http://blog.collectib.ly", target: "_blank" do
+            .icon.inline{data: {title: "Read and follow our blog"}}
+              %i.fa.fa-tumblr
+          
+          = link_to "http://www.facebook.com/collectibly", target: "_blank" do  
+            .icon.inline{data: {title: "Like our Facebook page"}}
+              %i.fa.fa-facebook
+          
+          = link_to "http://twitter.com/intent/user?screen_name=collectibly", target: "_blank" do  
+            .icon.inline{data: {title: "Follow us on Twitter"}}
+              %i.fa.fa-twitter
+          
+          = link_to "mailto:team@collectib.ly", target: "_blank" do
+            .icon.inline{data: {title: "Email us"}}
+              %i.fa.fa-envelope-o
+    
+        .footer-brand 
+          Collectibly 2014
+          © Zestyl Pte. Ltd.

@@ -1,0 +1,94 @@
+@import "variables";
+#footer {
+  width: 100%;
+  margin: 50px auto 0;
+  padding: 50px 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #232323;
+  @include border_box;
+  a {
+    margin-right: 5px;
+    color: white;
+    @include all-transitions(0.3s, ease-in-out);
+    &:hover {
+      color: $lightText;
+    }
+  }
+  .footer-text-link {
+    display: block;
+    text-align: left;
+    font-weight: 300;
+  }
+  img {
+    position: absolute;
+    top: 0;
+  }
+  .footer-columns {
+    width: 1080px;
+    margin: 0 auto 20px;
+    overflow: auto;
+  }
+  .footer-column {
+    width: 270px;
+    float: left;
+  }
+  .footer-header {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  .footer-apps {
+    color: white;
+    margin-bottom: 20px;
+    .icon {
+      background-color: $lightText;
+      height: 30px;
+      width: 30px;
+      @include border_radius(15px);
+      i {
+        color: white;
+        font-size: 21px;
+        padding-left: 1px;
+        padding-top: 4px;
+      }
+      &:hover {
+        background-color: $midText;
+      }
+    }
+  }
+  .footer-contact {
+    height: 20px;
+    margin-bottom: 15px;
+  }
+  .icon {
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    @include border_radius(10px);
+    @include all-transitions(0.3s, ease-in-out);
+    i {
+      height: 100%;
+      width: 100%;
+      color: white;
+      font-size: 12px;
+      padding-left: 0px;
+    }
+    &:hover {
+      background-color: $lightText;
+    }
+  }
+  .footer-brand {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .follow {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
