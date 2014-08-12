@@ -5,5 +5,8 @@ class CharactersController < ApplicationController
 
   def starlord
   end
-  
+
+  def rocketraccoon
+  end
+
 end

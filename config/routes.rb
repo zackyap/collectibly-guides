@@ -4,6 +4,7 @@ CollectiblyGuides::Application.routes.draw do
   resources :guides
 
   get "characters/star-lord" => "characters#starlord"
+  get "characters/rocket-raccoon" => "characters#rocketraccoon"
 
   resources :characters
 
