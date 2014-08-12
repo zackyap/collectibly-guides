@@ -1,0 +1,629 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, /* took out <strong>, <em> */
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* border-box model */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* <a> styling */
+p a:link {color:#fff69b; text-decoration: none; font-weight: 700;}
+p a:visited {color:#fff69b; text-decoration: none; font-weight: 700;}
+p a:hover   {color:#e67e22; text-decoration: underline; font-weight: 700;}
+
+a:link    {color:#009fe4; text-decoration: none;}
+a:visited {color:#009fe4; text-decoration: none;}
+a:hover   {color:#e67e22; text-decoration: underline;}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  color: #3d3d3d;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sl {
+  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.rr {
+  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/rocketraccoonbg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.groot {
+  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/grootbg2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.ga {
+  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/gamorabg2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.drax {
+  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/draxbg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.sl-color {
+  background: rgba(153,0,0,.8);
+}
+
+.rr-color {
+  background: rgba(211,84,0,.8);
+}
+
+.ga-color {
+  background: rgba(180,33,72,.8);
+}
+
+.drax-color {
+  background: rgba(41,84,117,1);
+}
+
+.groot-color {
+  background: rgba(212,165,5,1);
+}
+
+/* .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+} */
+
+.items-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10% 2%;
+  z-index: 100;
+  background: rgba(255,255,255,.95);
+}
+
+.profile-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 1.5em;
+  z-index: 100;
+  background: rgba(255,255,255,.95);
+}
+
+.char-pic {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5em;
+  color: #ffffff;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.profile {
+  width: 25%;
+  float: left;
+  padding-right: 1em;
+  position: relative;
+}
+
+.bio {
+  width: 75%;
+  float: right;
+  padding-left: 1.5em;
+}
+
+.intro {
+  width: 100%;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  padding-right: 2em;
+}
+
+.space {
+  margin-bottom: 1em;
+}
+
+.features {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Nova Square", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 0.25em;
+  border-top: 2px solid #ffffff;
+}
+
+.field {
+  font-weight: 900;
+}
+
+table {
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+td {
+  padding: 0 2em 0.5em 0;
+}
+
+#section-title {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 1em;
+  font-family: "Trajan Pro", "Arial", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  line-height: 150%;
+  border-bottom: 1px solid #747474;
+}
+
+.brand {
+  float: left;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.brand-info {
+  float: right;
+  width: 90%;
+  line-height: 150%;
+  padding: 1em 2em;
+  margin-bottom: 0.5em;
+}
+
+.character {
+  padding-top: 4em;
+  font-size: 4em;
+  font-family: 'Quattrocento', serif;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+.single {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25%;
+}
+
+.two {
+  width: 50%;
+  float: left;
+  padding: 0.5%;
+}
+
+.three {
+  width: 30%;
+  float: left;
+  padding: 0.5%;
+}
+
+.four, .trait {
+  width: 25%;
+  /* max-width: 300px; */
+  float: left;
+  padding: 0.5%;
+  position: relative;
+}
+
+/* animation */
+
+#cf {
+  position: relative;
+  display: block;
+  height: 200px;
+}
+
+#cf img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover, #cf img.top:focus, #cf img.top:active {
+  opacity:0;
+}
+
+#cfprofile {
+  position: relative;
+  display: block;
+  height: 340px;
+}
+
+#cfprofile img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cfprofile img.top:hover, #cfprofile img.top:focus, #cfprofile img.top:active {
+  opacity:0;
+}
+
+/* end animation */
+
+.center {
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+
+.two-sq {
+  padding: 0 25%;
+}
+
+.three-sq {
+  padding-left: 10%;
+}
+
+.image-link {
+  width: 100%;
+}
+
+.dbitem-name {
+  font-weight: 500;
+  font-size: 1.3em;
+  line-height: 150%;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.sec {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.related {
+  padding: 2em 0;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.bg {
+  background: rgba(241,196,15,1);
+}
+
+.char {
+  width: 20%;
+  float: left;
+  padding: 1%;
+}
+
+.char-name {
+  font-family: "Trajan Pro", "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #3d3d3d;
+  text-align: center;
+  line-height: 150%;
+}
+
+.char-image {
+  width: 100%;
+}
+
+
+
+
+/*  
+
+
+.profile {
+  width: 25%;
+  float: left;
+  padding-right: 1em;
+  position: relative;
+}
+
+.bio {
+  width: 75%;
+  float: right;
+  padding-left: 1.5em;
+}
+
+.intro {
+  width: 100%;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  padding-right: 2em;
+}
+
+.four {
+  width: 25%;
+  max-width: 300px;
+  float: left;
+  padding: 0.5%;
+  position: relative;
+}
+
+.profile-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 1.5em;
+  z-index: 100;
+  background: rgba(255,255,255,.95);
+}
+
+.char-pic {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5em;
+  color: #ffffff;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.profile {
+  width: 25%;
+  float: left;
+  padding-right: 1em;
+  position: relative;
+}
+
+.bio {
+  width: 75%;
+  float: right;
+  padding-left: 1.5em;
+}
+
+.intro {
+  width: 100%;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+  padding-right: 2em;
+}
+
+#section-title {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 1em;
+  font-family: "Trajan Pro", "Arial", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  line-height: 150%;
+  border-bottom: 1px solid #747474;
+}
+
+.brand {
+  float: left;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.brand-info {
+  float: right;
+  width: 90%;
+  line-height: 150%;
+  padding: 1em 2em;
+  margin-bottom: 0.5em;
+}
+
+*/
+
+@media all and (max-width: 1000px) {
+  .profile {
+    width: 30%;
+  }
+  .bio {
+    width: 70%;
+  }
+  #cf {
+    height: 125px;
+  }
+  #cfprofile {
+    height: 310px;
+  }
+  .brand {
+    width: 15%;
+  }
+  .brand-info {
+    width: 85%;
+    padding-right: 1em;
+  }
+  #section-title {
+    width: 85%;
+    padding-top: 0.5em;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .profile {
+    width: 35%;
+  }
+  .bio {
+    width: 65%;
+  }
+  #cf {
+    height: 100px;
+  }
+  #cfprofile {
+    height: 320px;
+  }
+  .brand-info {
+    padding-right: 0em;
+  }
+  #section-title {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .profile {
+    width: 100%;
+    float: none;
+    padding: 0 25%;
+  }
+  .bio {
+    width: 100%;
+    float: none;
+  }
+  .items-wrapper {
+    padding: 0 5% 3%;
+  }
+  #cf {
+    height: 280px;
+  }
+  #cfprofile {
+    height: 400px;
+  }
+  .trait {
+    width: 50%;
+    padding: 1.5%;
+  }
+  .center {
+    padding-bottom: 1em;
+  }
+  .intro {
+    padding-right: 0em;
+  }
+  .features {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #cf {
+    height: 250px;
+  }
+  #cfprofile {
+    height: 350px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .profile {
+    padding: 0 22.5%;
+  }
+  #cf {
+    height: 220px;
+  }
+  #cfprofile {
+    height: 350px;
+  }
+  .items-wrapper {
+    padding: 0 4% 4%;
+  }
+  .two {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .three {
+    width: 100%;
+    padding: 0 25%;
+  }
+  .three-sq {
+    padding-left: 0;
+  }
+  .four {
+    width: 50%;
+  }
+  .brand {
+    float: none;
+  }
+  .brand-info {
+    width: 100%;
+    padding-left: 0em;
+    text-align: justify;
+  }
+}

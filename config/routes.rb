@@ -3,9 +3,9 @@ CollectiblyGuides::Application.routes.draw do
 
   resources :guides
 
-  resources :characters
-
   get "characters/star-lord" => "characters#starlord"
+
+  resources :characters
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
