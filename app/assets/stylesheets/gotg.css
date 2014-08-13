@@ -627,10 +627,10 @@ td {
   .brand-info, .intro, td {
     font-size: 0.9em;
   }
-}
-
-@media only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
-  .sl {
-    background-attachment: scroll;
+  #cfprofile img {
+    position: relative;
+  }
+  .top {
+    display: none;
   }
 }
