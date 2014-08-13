@@ -88,6 +88,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 
   @media (max-device-width: 1136px) and (min-device-width: 960px) and (max-device-height: 640px) and (min-device-height: 560px) {
     background-attachment: scroll;
