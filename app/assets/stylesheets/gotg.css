@@ -148,10 +148,6 @@ body {
   position: relative;
 }
 
-.container {
-  padding: 0px;
-}
-
 .items-wrapper, .profile-wrapper {
   max-width: 1280px;
   background: rgba(255,255,255,.9);
@@ -323,33 +319,29 @@ td {
 
 /* animation */
 
-#cf {
+.cf {
   position: relative;
   display: block;
-  height: 200px;
 }
 
-#cfprofile {
+.bottom {
   position: relative;
-  display: block;
-  height: 340px;
+  border: 1px solid #eeeeee;
 }
 
-#cf img, #cfprofile img {
+.top {
   position: absolute;
-  left: 0;
+  top: 0px;
+  bottom: 0px;
+  z-index: 100;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
-#cf img.top:hover, #cf img.top:focus, #cf img.top:active {
-  opacity:0;
-}
-
-#cfprofile img.top:hover, #cfprofile img.top:focus, #cfprofile img.top:active {
-  opacity:0;
+.top:hover, .top:focus, .top:active {
+  opacity: 0;
 }
 
 /* end animation */
@@ -402,20 +394,14 @@ td {
 }
 
 @media only screen and (max-width: 1081px) {
-  .character {
+  /* .character {
     padding-top: 30%;
-  }
+  } */
   .profile {
     width: 27.5%;
   }
   .bio {
     width: 72.5%;
-  }
-  #cf {
-    height: 180px;
-  }
-  #cfprofile {
-    height: 320px;
   }
   .trait-wrapper {
     padding: 0%;
@@ -428,12 +414,6 @@ td {
   }
   .bio {
     width: 70%;
-  }
-  #cf {
-    height: 170px;
-  }
-  #cfprofile {
-    height: 320px;
   }
   .section-title {
     width: 85%;
@@ -451,20 +431,14 @@ td {
 }
 
 @media only screen and (max-width: 900px) {
-  .character {
+  /* .character {
     padding-top: 35%;
-  }
+  } */
   .profile {
     width: 32.5%;
   }
   .bio {
     width: 67.5%;
-  }
-  #cf {
-    height: 150px;
-  }
-  #cfprofile {
-    height: 310px;
   }
   .brand-info {
     padding-right: 0%;
@@ -475,9 +449,9 @@ td {
 }
 
 @media only screen and (max-width: 769px) {
-  .character {
+  /* .character {
     padding-top: 45%;
-  }
+  } */
   .items-wrapper {
     padding: 0 2.5% 2.5%;
   }
@@ -489,12 +463,6 @@ td {
   .bio {
     width: 100%;
     float: none;
-  }
-  #cf {
-    height: 210px;
-  }
-  #cfprofile {
-    height: 340px;
   }
   .trait-wrapper {
     padding: 2.5%;
@@ -534,17 +502,18 @@ td {
 }
 
 @media only screen and (max-width: 641px) {
-  .character {
+  /* .character {
     padding-top: 50%;
-  }
+  } */
+  .sl {
+    background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg5.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
   .profile {
     padding: 0 25%;
-  }
-  #cf {
-    height: 170px;
-  }
-  #cfprofile {
-    height: 350px;
   }
   .items-wrapper {
     padding: 0 4% 4%;
@@ -578,27 +547,21 @@ td {
 }
 
 @media only screen and (max-width: 600px) {
-  .character {
+  /* .character {
     padding-top: 75%;
-  }
+  } */
   .profile-wrapper {
     padding: 1%;
   }
   .bio {
     padding-left: 0em;
   }
-  #cf {
-    height: 170px;
-  }
-  #cfprofile {
-    height: 340px;
-  }
 }
 
 @media only screen and (max-width: 481px) {
-  .character {
+  /* .character {
     padding-top: 11.5em;
-  }
+  } */
   .profile {
     padding: 5% 15%;
   }
@@ -608,12 +571,6 @@ td {
   .trait {
     width: 50%;
     padding: 1%;
-  }
-  #cf {
-    height: 195px;
-  }
-  #cfprofile {
-    height: 375px;
   }
   .four {
     padding: 1%;
@@ -626,11 +583,5 @@ td {
   }
   .brand-info, .intro, td {
     font-size: 0.9em;
-  }
-  #cfprofile img {
-    position: relative;
-  }
-  .top {
-    display: none;
   }
 }
