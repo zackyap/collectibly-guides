@@ -511,7 +511,7 @@ td {
     padding-top: 280px;
   }
   .sl {
-    background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg5.jpg') no-repeat center center fixed;
+    background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg5.jpg') no-repeat center top fixed;
   }
   .profile {
     padding: 0 17.5%;
