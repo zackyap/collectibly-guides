@@ -372,6 +372,7 @@ td {
   padding: 3% 0 2%;
   font-size: 1.1em;
   font-weight: 500;
+  line-height: 120%;
 }
 
 .space {
@@ -506,14 +507,14 @@ td {
 }
 
 @media only screen and (max-width: 640px) {
-  /* .character {
-    padding-top: 50%;
-  } */
+  .character {
+    padding-top: 280px;
+  }
   .sl {
-    background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg5.jpg') no-repeat center top fixed;
+    background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg5.jpg') no-repeat center center fixed;
   }
   .profile {
-    padding: 0 25%;
+    padding: 0 17.5%;
   }
   .items-wrapper {
     padding: 0 4% 4%;
@@ -524,7 +525,7 @@ td {
   }
   .three {
     width: 100%;
-    padding: 0 27.5%;
+    padding: 0 22.5%;
   }
   .three-sq {
     padding-left: 0%;
@@ -544,12 +545,12 @@ td {
   .char {
     width: 50%;
   }
+  .sa, .sb {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  /* .character {
-    padding-top: 75%;
-  } */
   .profile-wrapper {
     padding: 1%;
   }
@@ -559,11 +560,8 @@ td {
 }
 
 @media only screen and (max-width: 480px) {
-  /* .character {
-    padding-top: 11.5em;
-  } */
   .profile {
-    padding: 5% 15%;
+    padding: 5% 10%;
   }
   .intro {
     padding-top: 0%;
@@ -571,6 +569,9 @@ td {
   .trait {
     width: 50%;
     padding: 1%;
+  }
+  .sa {
+    width: 100%;
   }
   .four {
     padding: 1%;
@@ -584,20 +585,24 @@ td {
   .brand-info, .intro, td {
     font-size: 0.9em;
   }
+  .intro, table {
+    margin-bottom: 5%;
+  }
+
 }
 
 @media only screen and (max-width: 320px) {
   .character {
     font-size: 2.5em;
-    padding-top: 524px;
+    padding-top: 289px;
   }
   .profile {
-    padding: 5%;
+    padding: 1.5%;
   }
   .center {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
-  .ss {
+  .sa {
     width: 100%;
   }
   .features {
@@ -615,5 +620,14 @@ td {
   }
   .char-name {
     font-size: 0.9em;
+  }
+  .intro, .brand-info {
+    text-align: justify;
+  }
+  .bio, .brand-info {
+    padding: 3% 2%;
+  }
+  td {
+    padding: 0 1em 0.5em 0;
   }
 }
