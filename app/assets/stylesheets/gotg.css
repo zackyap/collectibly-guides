@@ -401,3 +401,230 @@ td {
   padding: 1%;
 }
 
+@media all and (max-width: 1081px) {
+  .character {
+    padding-top: 30%;
+  }
+  .profile {
+    width: 27.5%;
+  }
+  .bio {
+    width: 72.5%;
+  }
+  #cf {
+    height: 180px;
+  }
+  #cfprofile {
+    height: 320px;
+  }
+  .trait-wrapper {
+    padding: 0%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .profile {
+    width: 30%;
+  }
+  .bio {
+    width: 70%;
+  }
+  #cf {
+    height: 170px;
+  }
+  #cfprofile {
+    height: 320px;
+  }
+  .section-title {
+    width: 85%;
+  }
+  .brand {
+    width: 15%;
+  }
+  .brand-info {
+    width: 85%;
+    padding-right: 1%;
+  }
+  .dbitem-name {
+    font-size: 1.1em;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .character {
+    padding-top: 35%;
+  }
+  .profile {
+    width: 32.5%;
+  }
+  .bio {
+    width: 67.5%;
+  }
+  #cf {
+    height: 150px;
+  }
+  #cfprofile {
+    height: 310px;
+  }
+  .brand-info {
+    padding-right: 0%;
+  }
+  .section-title {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .character {
+    padding-top: 45%;
+  }
+  .items-wrapper {
+    padding: 0 2.5% 2.5%;
+  }
+  .profile {
+    width: 100%;
+    float: none;
+    padding: 0 30%;
+  }
+  .bio {
+    width: 100%;
+    float: none;
+  }
+  #cf {
+    height: 210px;
+  }
+  #cfprofile {
+    height: 340px;
+  }
+  .trait-wrapper {
+    padding: 2.5%;
+  }
+  .trait {
+    width: 33.33333%;
+  }
+  .section-title {
+    font-size: 1.8em;
+  }
+  .center {
+    padding-bottom: 1%;
+  }
+  .intro {
+    padding-top: 2%;
+    padding-right: 0%;
+  }
+  .features {
+    text-align: center;
+  }
+  .dbitem-name {
+    font-size: 1.1em;
+  }
+  .brand-info {
+    padding-right: 0.5%;
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 721px) {
+  #cf {
+    height: 200px;
+  }
+  #cfprofile {
+    height: 320px;
+  }
+}
+
+@media all and (max-width: 641px), and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .character {
+    padding-top: 50%;
+  }
+  .profile {
+    padding: 0 25%;
+  }
+  #cf {
+    height: 170px;
+  }
+  #cfprofile {
+    height: 350px;
+  }
+  .items-wrapper {
+    padding: 0 4% 4%;
+  }
+  .two {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .three {
+    width: 100%;
+    padding: 0 27.5%;
+  }
+  .three-sq {
+    padding-left: 0%;
+  }
+  .four {
+    width: 50%;
+    padding: 2%;
+  }
+  .brand {
+    float: none;
+  }
+  .brand-info {
+    width: 100%;
+    padding-left: 0%;
+    float: none;
+  }
+  .char {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .character {
+    padding-top: 75%;
+  }
+  .profile-wrapper {
+    padding: 1%;
+  }
+  .bio {
+    padding-left: 0em;
+  }
+  #cf {
+    height: 170px;
+  }
+  #cfprofile {
+    height: 340px;
+  }
+}
+
+@media all and (max-width: 481px) {
+  .character {
+    padding-top: 11.5em;
+  }
+  .profile {
+    padding: 5% 15%;
+  }
+  .intro {
+    padding-top: 0%;
+  }
+  .trait {
+    width: 50%;
+    padding: 1%;
+  }
+  #cf {
+    height: 195px;
+  }
+  #cfprofile {
+    height: 375px;
+  }
+  .four {
+    padding: 1%;
+  }
+  .dbitem-name {
+    font-size: 1.1em;
+  }
+  .sec {
+  font-size: 0.6em;
+  }
+  .brand-info, .intro, td {
+    font-size: 0.9em;
+  }
+}
