@@ -577,7 +577,7 @@ td {
   }
 }
 
-@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .character {
     padding-top: 50%;
   }
@@ -619,7 +619,7 @@ td {
   .char {
     width: 50%;
   }
-}
+} */
 
 @media all and (max-width: 600px) {
   .character {
