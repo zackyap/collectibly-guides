@@ -533,7 +533,7 @@ td {
   }
 }
 
-@media all and (max-width: 641px), and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media all and (max-width: 641px) {
   .character {
     padding-top: 50%;
   }
