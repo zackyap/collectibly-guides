@@ -92,7 +92,6 @@ ul.dropdown-menu {
   @include no_box_shadow;
 }
 
-
 @media (max-width: 979px) {
   #collectibly-nav { position: fixed; }
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner { padding: 0; }
