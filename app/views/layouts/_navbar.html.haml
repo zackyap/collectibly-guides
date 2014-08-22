@@ -1,17 +1,17 @@
--# - cache ["navbar"] do
--#  #collectibly-nav.navbar.navbar-fixed-top
--#    .navbar-inner
--#      .navbar-centered  
--#        %ul.nav.pull-left
--#          %li.dropdown.explore-dropdown
--#            .dropdown-toggle{"data-toggle" => "dropdown"}
--#              %i.fa.fa-bars
--#            %ul.dropdown-menu.explore-dropdown-list
--#              %li= link_to "Collectibly Main", "www.collectib.ly", target: "_blank"
--#              %li= link_to "News Feed", "www.collectib.ly/feed", target: "_blank"
--#              %li= link_to "People", "www.collectib.ly/explore/users", class: "navbar-explore-users", target: "_blank"
--#              %li= link_to "Collections", "www.collectib.ly/explore/collections", class: "navbar-explore-collections", target: "_blank"
--#              %li= link_to "Items", "www.collectib.ly/explore/items", class: "navbar-explore-db-items", target: "_blank"
+- cache ["navbar"] do
+  #collectibly-nav.navbar.navbar-fixed-top
+    .navbar-inner
+      .navbar-centered  
+        %ul.nav.pull-left
+          / %li.dropdown.explore-dropdown
+          /   .dropdown-toggle{"data-toggle" => "dropdown"}
+          /     %i.fa.fa-bars
+          /   %ul.dropdown-menu.explore-dropdown-list
+          /     %li= link_to "Collectibly Main", "www.collectib.ly", target: "_blank"
+          /     %li= link_to "News Feed", "www.collectib.ly/feed", target: "_blank"
+          /     %li= link_to "People", "www.collectib.ly/explore/users", class: "navbar-explore-users", target: "_blank"
+          /     %li= link_to "Collections", "www.collectib.ly/explore/collections", class: "navbar-explore-collections", target: "_blank"
+          /     %li= link_to "Items", "www.collectib.ly/explore/items", class: "navbar-explore-db-items", target: "_blank"
 
--#        = link_to root_path, class: "brand logo", target: "_blank" do
--#          = image_tag("https://d2570a3rnra2d5.cloudfront.net/images/logo/collectibly-web-logo.png", alt: "Collectibly", height: 50, width: 200) 
+        = link_to root_path, class: "brand logo", target: "_blank" do
+          = image_tag("https://d2570a3rnra2d5.cloudfront.net/images/logo/collectibly-web-logo.png", alt: "Collectibly", height: 50, width: 200) 
