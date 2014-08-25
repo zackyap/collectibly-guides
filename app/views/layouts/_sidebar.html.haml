@@ -1,10 +1,10 @@
 %nav#menu.side-panel{role: "navigation"}
-  %ul
+  %ul{:data => { "no-turbolink" => true } }
     %li.sidebar-list-item.first-item
       = link_to root_path do
         %span.icon
           %i.fa.fa-bookmark
-        Guides Index
+        All Guides
     %li.sidebar-list-item
       = link_to gotg_starlord_guide_path do
         %span.icon= image_tag "https://s3.amazonaws.com/Collectibly-Marketing/Images/Guides/Sidenav/gotg-guide-icon.png"

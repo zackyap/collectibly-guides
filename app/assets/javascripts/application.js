@@ -21,3 +21,7 @@
 $(document).ready(function() {
   $('.menu-link').bigSlide();
 });
+
+// $(document).on("page:change", {
+//   $('.menu-link').bigSlide();
+// });
