@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+//= require jquery.big-slide
+
+
+$(document).ready(function() {
+  $('.menu-link').bigSlide();
+});
