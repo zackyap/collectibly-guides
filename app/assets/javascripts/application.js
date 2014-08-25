@@ -16,10 +16,18 @@
 //= require_tree .
 //= require bootstrap
 //= require jquery.big-slide
+//= require share.min
 
 
 $(document).ready(function() {
   $('.menu-link').bigSlide();
+
+  var share_config = {
+    ui: {
+      flyout: "bottom left"
+    }
+  };
+  new Share(".share-button", share_config);
 });
 
 // $(document).on("page:change", {
