@@ -26,9 +26,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
-ol, ul {
-  list-style: none;
-}
 blockquote, q {
   quotes: none;
 }
@@ -65,21 +62,35 @@ table {
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 /* <a> styling */
-p a:link {color:#fff69b; text-decoration: none; font-weight: 700;}
-p a:visited {color:#fff69b; text-decoration: none; font-weight: 700;}
-p a:hover   {color:#e67e22; text-decoration: underline; font-weight: 700;}
+.intro a:link {color:#fff69b; text-decoration: none; font-weight: 700;}
+.intro a:visited {color:#fff69b; text-decoration: none; font-weight: 700;}
+.intro a:hover   {color:#e67e22; text-decoration: underline; font-weight: 700;}
 
 a:link    {color:#009fe4; text-decoration: none;}
 a:visited {color:#009fe4; text-decoration: none;}
 a:hover   {color:#e67e22; text-decoration: underline;}
+
+ul {
+  list-style: square;
+  list-style-position: inside;
+  padding-left: 1em;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
   color: #3d3d3d;
+  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  cursor: default;
+}
+
+header {
+  background: rgba(255,255,255,1);
 }
 
 .sl {
@@ -99,7 +110,7 @@ body {
 }
 
 .groot {
-  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/grootbg2.jpg') no-repeat center center fixed;
+  background: url('../Images/grootbg2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -107,7 +118,7 @@ body {
 }
 
 .ga {
-  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/gamorabg2.jpg') no-repeat center center fixed;
+  background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/gamorabg2.jpg') no-repeat center top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -122,35 +133,63 @@ body {
   background-size: cover;
 }
 
+.ronan {
+  background: url('../Images/ronanbg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.ships {
+  background: url('../Images/XandarSky.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gear {
+  background: url('../Images/starlordbg.jpg') no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .sl-color {
   background: rgba(153,0,0,.8);
 }
 
 .rr-color {
-  background: rgba(211,84,0,.8);
-}
-
-.ga-color {
-  background: rgba(180,33,72,.8);
-}
-
-.drax-color {
-  background: rgba(41,84,117,1);
+  background: rgba(192,74,0,.8);
 }
 
 .groot-color {
-  background: rgba(212,165,5,1);
+  background: rgba(39,124,56,.8);
 }
 
-.container, .char-wrapper, .items-wrapper, .profile-wrapper, .trait-wrapper {
+.ga-color {
+  background: rgba(162,14,122,.8);
+}
+
+.drax-color {
+  background: rgba(194,33,12,.8);
+}
+
+.ronan-color {
+  background: rgba(82,68,153,1);
+}
+
+.container, .char-wrapper, .items-wrapper, .profile-wrapper, .trait-wrapper, .title-wrapper, .related-wrapper {
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-.items-wrapper, .profile-wrapper {
+.items-wrapper, .title-wrapper, .profile-wrapper, .sc-wrapper {
   max-width: 1280px;
-  background: rgba(255,255,255,.9);
+  background: rgba(255,255,255,.95);
 }
 
 .container {
@@ -159,6 +198,10 @@ body {
 
 .items-wrapper {
   padding: 0 10% 5%; 
+}
+
+.title-wrapper {
+  padding: 0 10%;
 }
 
 .profile-wrapper {
@@ -173,31 +216,39 @@ body {
   padding-top: 1%;
 }
 
-.related-bg {
+.related-wrapper {
+  padding: 0 10% 2%;
   background: rgba(241,196,15,1);
 }
 
+.sc-wrapper {
+  padding: 2% 20% 1%;
+}
+
+.gear-wrapper {
+  padding: 2% 0;
+}
+
 .character {
-  padding-top: 20%;
+  padding-top: 80vh;
   font-size: 4em;
   font-family: 'Quattrocento', "Roboto", "Arial", sans-serif;
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: #ecf0f1;
   text-shadow: 5px 5px 5px #000000;
 }
 
-.char-info {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding: 4%;
-  color: #ffffff;
-  line-height: 150%;
+.sub-char {
+  font-size: 50%;
   font-weight: 400;
-  font-size: 1em;
+}
+
+.char-info {
+  padding: 3% 4%;
+  color: #ffffff;
 }
 
 .profile {
@@ -214,30 +265,8 @@ body {
 
 .intro {
   width: 100%;
-  font-weight: 400;
   margin-bottom: 2.5%;
   padding-right: 2.5%;
-}
-
-.trait {
-  width: 20%;
-  float: left;
-  padding: 0.5%;
-  position: relative;
-}
-
-.features {
-  width: 100%;
-  text-transform: uppercase;
-  font-family: "Nova Square", "Roboto", "Helvetica Neue", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 1.5em;
-  padding: 1%;
-  border-top: 2px solid #ffffff;
-}
-
-.field {
-  font-weight: 900;
 }
 
 table {
@@ -249,17 +278,46 @@ td {
   padding: 0 3.5em 0.5em 0;
 }
 
+.features {
+  text-transform: uppercase;
+  font-family: "Nova Square", "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 1%;
+  border-top: 2px solid #ffffff;
+}
+
+.trait {
+  width: 20%;
+  float: left;
+  padding: 0.5%;
+  position: relative;
+}
+
 .section-title {
   width: 70%;
   margin: 0 auto;
   font-family: "Trajan Pro", "Arial", sans-serif;
   font-size: 2em;
   font-weight: 700;
+  line-height: 150%;
   color: #000000;
   text-align: center;
-  line-height: 150%;
   border-bottom: 1px solid #747474;
   padding-top: 2.5%;
+}
+
+.section-char {
+  width: 20%;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #009fe4;
+  float: left;
+}
+
+.scb {
+  border-right: 2px solid #003366;
 }
 
 .brand {
@@ -272,7 +330,6 @@ td {
 .brand-info {
   float: right;
   width: 90%;
-  line-height: 150%;
   padding: 1.5% 2.5%;
 }
 
@@ -282,46 +339,54 @@ td {
   padding: 0 25%;
 }
 
-.two {
+.two { /* responsive */
   width: 50%;
   float: left;
-  padding: 0.5%;
+  padding: 1%;
 }
 
-.three {
+.three { /* responsive */
   width: 30%;
   float: left;
   padding: 0.5%;
 }
 
-.four {
+.four { /* responsive */
   width: 25%;
   float: left;
   padding: 0.5%;
-  position: relative;
 }
 
 .two-sq {
   padding: 0 25%;
 }
 
-.three-sq {
+.three-sq { /* responsive */
   padding-left: 10%;
 }
 
 .image-link {
   width: 100%;
+  cursor: pointer;
+}
+
+.image-link:hover {
+  -webkit-box-shadow: 0px 0px 7px #448ccb;
+  -moz-box-shadow: 0px 0px 7px #448ccb;
+  box-shadow: 0px 0px 7px #448ccb;
+}
+
+.image {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .dbitem-name {
   font-weight: 500;
   font-size: 1.3em;
-  line-height: 150%;
   text-align: center;
   padding: 1.5%;
 }
-
-/* animation */
 
 .cf {
   position: relative;
@@ -330,13 +395,13 @@ td {
 
 .bottom {
   position: relative;
-  border: 1px solid #eeeeee;
 }
 
 .top {
   position: absolute;
   top: 0px;
   bottom: 0px;
+  left: 0px;
   z-index: 100;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
@@ -348,24 +413,34 @@ td {
   opacity: 0;
 }
 
-/* end animation */
+.space {
+  padding-bottom: 0.5em;
+}
 
-.center {
+.tc {
   text-align: center;
-  position: relative;
+}
+
+.bold {
   font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.quote {
+  font-weight: 500;
+  padding-left: 3%;
 }
 
 .sec {
   font-size: 0.7em;
-  font-weight: 400;
   color: #3d3d3d;
 }
 
 .highlight {
   background: rgba(0,0,0,0.1);
-  line-height: 150%;
-  text-align: center;
 }
 
 .related {
@@ -375,17 +450,11 @@ td {
   line-height: 120%;
 }
 
-.space {
-  margin-bottom: 1em;
-}
-
 .char-name {
   font-family: "Trajan Pro", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
   font-weight: 700;
   color: #3d3d3d;
   text-align: center;
-  line-height: 150%;
 }
 
 .char-image {
@@ -398,10 +467,63 @@ td {
   padding: 1%;
 }
 
+.ship-name {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.sci-name {
+  font-weight: 400;
+  font-size: 1em;
+  padding: 1%;
+}
+
+.ls {
+  width: 60%;
+  float: left;
+  position: relative;
+  color: #ffffff;
+}
+
+.ls-top {
+  margin: 0 auto;
+  position: absolute;
+  padding: 1.5%;
+  top: 87%;
+  bottom: 2%;
+  left: 0px;
+  background-color: rgba(0,0,0,0.35);
+  z-index: 100;
+}
+
+.ls-info {
+  width: 40%;
+  float: right;
+  padding: 0 2%;
+}
+
+.sp {
+  padding-right: 25%;
+}
+
+.lg {
+  width: 35%;
+  float: left;
+  position: relative;
+  color: #ffffff;
+}
+
+.lg-info {
+  width: 65%;
+  float: right;
+  padding: 0 2%;
+}
+
+.gp {
+  padding-right: 10%;
+}
+
 @media only screen and (max-width: 1080px) {
-  /* .character {
-    padding-top: 30%;
-  } */
   .profile {
     width: 27.5%;
   }
@@ -436,9 +558,6 @@ td {
 }
 
 @media only screen and (max-width: 900px) {
-  /* .character {
-    padding-top: 35%;
-  } */
   .profile {
     width: 32.5%;
   }
@@ -454,16 +573,37 @@ td {
 }
 
 @media only screen and (max-width: 768px) {
-  /* .character {
-    padding-top: 45%;
-  } */
+  .character {
+    padding-top: 200px;
+  }
+  .sl {
+    background: none;
+  }
+  div.sl-top {
+    background: url('../Images/starlordbg800px.jpg') no-repeat center top fixed;
+  }
+  div.rr-top {
+    background: url('../Images/rocketraccoonbg800px.jpg') no-repeat center top fixed;
+  }
+  div.drax-top {
+    background: url('../Images/draxbg800px.jpg') no-repeat center top fixed;
+  }
+  div.groot-top {
+    background: url('../Images/grootbg800px.jpg') no-repeat center top fixed;
+  }
+  div.ga-top {
+    background: url('../Images/gamorabg800px.jpg') no-repeat center top fixed;
+  }
+  div.ronan-top {
+    background: url('../Images/ronanbg800px.jpg') no-repeat center top fixed;
+  }
   .items-wrapper {
     padding: 0 2.5% 2.5%;
   }
   .profile {
     width: 100%;
     float: none;
-    padding: 0 30%;
+    padding: 0 25%;
   }
   .bio {
     width: 100%;
@@ -478,7 +618,7 @@ td {
   .section-title {
     font-size: 1.8em;
   }
-  .center {
+  .tc {
     padding-bottom: 1%;
   }
   .intro {
@@ -507,12 +647,6 @@ td {
 }
 
 @media only screen and (max-width: 640px) {
-  .character {
-    padding-top: 280px;
-  }
-  .sl {
-    background: url('https://s3.amazonaws.com/Collectibly-Marketing/Images/starlordbg5.jpg') no-repeat center top fixed;
-  }
   .profile {
     padding: 0 17.5%;
   }
@@ -554,12 +688,18 @@ td {
   .profile-wrapper {
     padding: 1%;
   }
+  .character {
+    font-size: 3.5em;
+  }
   .bio {
     padding-left: 0em;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  .character {
+    font-size: 2.5em;
+  }
   .profile {
     padding: 5% 10%;
   }
@@ -594,12 +734,12 @@ td {
 @media only screen and (max-width: 320px) {
   .character {
     font-size: 2.5em;
-    padding-top: 289px;
+    padding-top: 200px;
   }
   .profile {
     padding: 1.5%;
   }
-  .center {
+  .tc {
     font-size: 0.9em;
   }
   .sa {

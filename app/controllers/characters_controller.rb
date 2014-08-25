@@ -9,4 +9,16 @@ class CharactersController < ApplicationController
   def rocketraccoon
   end
 
+  def groot
+  end
+
+  def gamora
+  end
+
+  def drax
+  end
+
+  def ships
+  end
+
 end
