@@ -2,6 +2,7 @@
 %html{:lang => "en-us"}
   %head
     %title= "#{yield(:title)}"
+    = stylesheet_link_tag "//cdn-images.mailchimp.com/embedcode/slim-081711.css", media: "all"
     = stylesheet_link_tag :application, :media => "all"
     = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", media: "all"
     = javascript_include_tag :application, "data-tubolinks-track" => true

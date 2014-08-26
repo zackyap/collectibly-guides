@@ -44,3 +44,31 @@
     }
   }
 }
+
+#mc_embed_signup{
+  background:#191919; 
+  clear:left; 
+  font:14px; 
+  color: $lighterText;  
+  width:240px; 
+  position: absolute;
+  bottom: 0;
+  form {padding: 10px 10px 10px 20px;}
+  label {font-size: 14px;}
+  input.button {
+    width: 25%; 
+    min-width: 75px; 
+    font-size: 12px; 
+    background-color: $collectiblyGreen; 
+    height: 28px;
+    line-height: 28px;
+    &:hover {background-color: darken($collectiblyGreen, 10%);}
+  }
+  input.email {
+    width: 95%;
+    padding: 3px 0;
+    font-size: 14px;
+    border-radius: 3px;
+    color: $midText;
+  }
+}
