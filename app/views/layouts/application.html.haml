@@ -22,10 +22,11 @@
 
     %body
       .page-container
-        = render 'layouts/navbar'
+        / = render 'layouts/navbar'
+        = render "layouts/sidebar"
         / = render "application/flash", :flash => flash
 
-        #page-container
+        #page-container.push
           = yield
 
         = render 'layouts/footer'

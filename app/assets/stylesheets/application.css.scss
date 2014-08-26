@@ -39,3 +39,17 @@
 //  width: 100%;
 //}
 
+body {
+  overflow-x:hidden;
+}
+
+#page-container {
+  position: relative;
+}
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+

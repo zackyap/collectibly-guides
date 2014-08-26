@@ -1,0 +1,15 @@
+%nav#menu.side-panel{role: "navigation"}
+  %ul{:data => { "no-turbolink" => true } }
+    %li.sidebar-list-item.first-item
+      = link_to root_path do
+        %span.icon
+          %i.fa.fa-bookmark
+        All Guides
+    %li.sidebar-list-item
+      = link_to gotg_starlord_guide_path do
+        %span.icon= image_tag "https://s3.amazonaws.com/Collectibly-Marketing/Images/Guides/Sidenav/gotg-guide-icon.png"
+        Guardians of the Galaxy
+    %li.sidebar-list-item
+      = link_to "http://www.collectib.ly", target: "_blank" do
+        %span.sidebar-logo.icon= image_tag "https://s3.amazonaws.com/Collectibly-Marketing/Images/Guides/Navbar/logo-only.png"
+        Collectibly Home

@@ -5,9 +5,9 @@
   @include border-box;
   height: $navbarHt;
   margin: 0 auto;
-  border-bottom: 1px solid $borderGray;
+  // border-bottom: 1px solid $borderGray;
   .navbar-inner {
-    background-color: $navBg;
+    // background-color: $navBg;
     background-image: none;
     border: none;
     height: 100%;
@@ -15,7 +15,7 @@
   }
   .brand {
     position: absolute;
-    left: 430px;
+    // left: 430px;
     @include border-box;
     padding: 0px;
     height: $navbarHt;
@@ -24,13 +24,16 @@
     line-height: 0;
     font-size: 0;
     img {
-      height: 100%;
+      width: 35px;
       display: inline;
       vertical-align: middle;
+      position: relative;
+      top: 12px;
+      left: 10px;
     }
   }
   .navbar-centered {
-    max-width: 1100px;
+    // max-width: 1100px;
     position: relative;
     margin: 0 auto;
     height: 100%;
@@ -96,9 +99,9 @@ ul.dropdown-menu {
   #collectibly-nav { position: fixed; }
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner { padding: 0; }
 }
-@media (max-width: 768px) {
-  #collectibly-nav .brand { left: 300px; }
-}
-@media (max-width: 720px) {
-  #collectibly-nav .brand { left: 260px; } 
-}
+// @media (max-width: 768px) {
+//   #collectibly-nav .brand { left: 300px; }
+// }
+// @media (max-width: 720px) {
+//   #collectibly-nav .brand { left: 260px; } 
+// }
