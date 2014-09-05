@@ -18,8 +18,6 @@ gem 'sitemap_generator'
 
 gem 'asset_sync'
 
-gem 'newrelic_rpm'
-
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # gem 'mysql2'
