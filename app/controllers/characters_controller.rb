@@ -21,4 +21,7 @@ class CharactersController < ApplicationController
   def ships
   end
 
+  def stgcc2014
+  end
+
 end

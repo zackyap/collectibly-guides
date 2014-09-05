@@ -1,0 +1,800 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* border-box model */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+a:link    {color:#08c; text-decoration: none;}
+a:visited {color:#08c; text-decoration: none;}
+a:hover   {color:#1f4a70; text-decoration: underline;}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  color: #3d3d3d;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;
+	background: #ffffff;
+}
+
+.content-wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background: #eeeeee;
+	padding-top: 2em;
+}
+
+nav {
+	display: block;
+	text-align: center;
+}
+
+.nav-l {
+	text-align: left;
+}
+
+.logo {
+	vertical-align: middle;
+	border-bottom: none;
+	font-family: "Museo", sans-serif;
+	font-size: 1.2em;
+	color: #448ccb;
+	text-transform: none;
+	width: 140px;
+}
+
+.one {
+	display: none;
+}
+
+.nav-r {
+	text-align: right;
+}
+
+li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	width: 180px;
+	padding-bottom: 10px;
+	margin: 0 5px;
+	border-bottom: 1px solid #3d3d3d;
+}
+
+.intro {
+	text-align: center;
+	font-family: "Trajan Pro", sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	color: #3d3d3d;
+	padding-top: 1em;
+	line-height: 80%;
+}
+
+.subtext {
+	font-size: 0.5em;
+	font-weight: 500;
+	color: #3d3d3d;
+}
+
+#ph {
+	background: #448ccb;
+}
+
+#hottoys {
+	background-image: url('../Images/STGCC/HotToysLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#funko {
+	background-image: url('../Images/STGCC/FunkoLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#hasbro {
+	background-image: url('../Images/STGCC/HasbroLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#danboard {
+	background-image: url('../Images/STGCC/DanboardLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#zcwo {
+	background-image: url('../Images/STGCC/ZCWOLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#pak {
+	background-image: url('../Images/STGCC/PAKLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#acgtoys {
+	background-image: url('../Images/STGCC/ACGToysLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#damtoys {
+	background-image: url('../Images/STGCC/DamToysLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#fansproject {
+	background-image: url('../Images/STGCC/FansProjectLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#toynami {
+	background-image: url('../Images/STGCC/ToynamiLogo.jpg');
+    background-position: center center;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+#peacemaker {
+	background-image: url('../Images/STGCC/HTPeacemaker.jpg');
+    background-position: center center;
+}
+
+#sls {
+    background-image: url('../Images/STGCC/HTStarLordSpecial.jpg');
+    background-position: center center;
+}
+
+#marty {
+    background-image: url('../Images/STGCC/HTMartyspecial.jpg');
+    background-position: center center;
+}
+
+#im3dc {
+    background-image: url('../Images/STGCC/HTIronMandiecast.jpg');
+    background-position: center center;
+}
+
+#opss {
+	background-image: url('../Images/STGCC/HTOptimusStarscream.jpg');
+    background-position: center center;
+}
+
+#ap {
+	background-image: url('../Images/STGCC/HTAncientpredator.jpg');
+    background-position: center center;
+}
+
+#python {
+	background-image: url('../Images/STGCC/HTPython.jpg');
+    background-position: center center;
+}
+
+#joker {
+	background-image: url('../Images/STGCC/HTJoker.jpg');
+    background-position: center center;
+}
+
+#funkomk {
+	background-image: url('../Images/STGCC/FunkoMonkeyKing.jpg');
+    background-position: center center;
+}
+
+#funkoms {
+	background-image: url('../Images/STGCC/FunkoMonkSha.jpg');
+    background-position: center center;
+}
+
+#funkomt {
+	background-image: url('../Images/STGCC/FunkoMonkTang.jpg');
+    background-position: center center;
+}
+
+#funkop {
+	background-image: url('../Images/STGCC/FunkoPigsy.jpg');
+    background-position: center center;
+}
+
+#funkolp {
+	background-image: url('../Images/STGCC/FunkoLittlePrince.jpg');
+    background-position: center center;
+}
+
+#funkopm {
+	background-image: url('../Images/STGCC/FunkoPrimeMinister.jpg');
+    background-position: center center;
+}
+
+#funkotj {
+	background-image: url('../Images/STGCC/FunkoTheJudge.jpg');
+    background-position: center center;
+}
+
+#funkots {
+	background-image: url('../Images/STGCC/FunkoTheSheriff.jpg');
+    background-position: center center;
+}
+
+#funkomsts {
+	background-image: url('../Images/STGCC/FunkoMindstyle.jpg');
+    background-position: center center;
+}
+
+#funkoemi {
+	background-image: url('../Images/STGCC/FunkoEmi.jpg');
+    background-position: center center;
+}
+
+#funkonana {
+	background-image: url('../Images/STGCC/FunkoNana.jpg');
+    background-position: center center;
+}
+
+#funkosakura {
+	background-image: url('../Images/STGCC/FunkoSakura.jpg');
+    background-position: center center;
+}
+
+#tbsjabba {
+	background-image: url('../Images/STGCC/TBSJabba.jpg');
+    background-position: center center;
+}
+
+#tbsimperial {
+	background-image: url('../Images/STGCC/TBSImperial.jpg');
+    background-position: center center;
+}
+
+#mgsphantom {
+	background-image: url('../Images/STGCC/MGSPhantom.jpg');
+    background-position: center center;
+}
+
+#brprint {
+	background-image: url('../Images/STGCC/BatmanRobinPrint.jpg');
+    background-position: center center;
+}
+
+#starburn {
+	background-image: url('../Images/STGCC/Starburncomic.jpg');
+    background-position: center center;
+}
+
+#azalea {
+	background-image: url('../Images/STGCC/Azalea.jpg');
+    background-position: center center;
+}
+
+#puyol {
+	background-image: url('../Images/STGCC/ZCWOPuyol.jpg');
+    background-position: center center;
+}
+
+#messi {
+	background-image: url('../Images/STGCC/ZCWOMessi.jpg');
+    background-position: center center;
+}
+
+#acgtiger {
+	background-image: url('../Images/STGCC/ACGTigerWong.jpg');
+    background-position: center center;
+}
+
+#spadej {
+	background-image: url('../Images/STGCC/DamtoysSpadeJ.jpg');
+    background-position: center center;
+}
+
+#danboardsafs {
+	background-image: url('../Images/STGCC/DanboardSAFS.jpg');
+    background-position: center center;
+}
+
+#danboardmak {
+	background-image: url('../Images/STGCC/DanboardMAK.jpg');
+    background-position: center center;
+}
+
+#danboardbanana {
+	background-image: url('../Images/STGCC/DanboardBa.jpg');
+    background-position: center center;
+}
+
+#metamorblackdino {
+	background-image: url('../Images/STGCC/BlackDino.jpg');
+    background-position: center center;
+}
+
+#naruto {
+	background-image: url('../Images/STGCC/Naruto.jpg');
+    background-position: center center;
+}
+
+#voltron {
+	background-image: url('../Images/STGCC/ToynamiVoltron.jpg');
+    background-position: center center;
+}
+
+#glassdoraemon {
+	background-image: url('../Images/STGCC/GlassDoraemon.jpg');
+    background-position: center center;
+}
+
+#fpcolumpio {
+	background-image: url('../Images/STGCC/FPColumpio.jpg');
+    background-position: center center;
+}
+
+#fpkarkrash {
+	background-image: url('../Images/STGCC/FPKarKrash.jpg');
+    background-position: center center;
+}
+
+#hasbrotfknights {
+	background-image: url('../Images/STGCC/Hasbrotfknights.jpg');
+    background-position: center center;
+}
+
+#didmartin {
+	background-image: url('../Images/STGCC/DIDMartinLutherKing.jpg');
+    background-position: center center;
+}
+
+#didmichael {
+	background-image: url('../Images/STGCC/DIDMichael.jpg');
+    background-position: center center;
+}
+
+.hex-wrapper {
+	width: 100%;
+	padding-left: 15%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.hex {
+	display: block;
+    position: relative;
+    margin: 100px auto;
+    width: 190px;
+    height: 110px;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: -32px;
+    z-index: 1;
+    /* Text styling */
+    line-height: 150%;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    color: rgba(255,255,255,.05);
+    cursor: pointer;
+    transition: color 500ms ease, text-shadow 500ms ease;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.hex:hover,
+.hex:focus,
+.hex:active {
+    color: #fff;
+    color: rgba(255,255,255);
+    font-weight: 700;
+    text-shadow: 0 0 5px #000000;
+    -webkit-box-shadow: 0px 0px 5px #448ccb;
+  	-moz-box-shadow: 0px 0px 5px #448ccb;
+  	box-shadow: 0px 0px 5px #448ccb;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #e1e1e1;
+  	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.hex-row {
+    clear: left;
+}
+
+.even {
+    margin-left: -103px;
+}
+
+.hex-bottom {
+	margin-bottom: 96px;
+}
+
+.hex .face1,
+.hex .face2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: inherit;
+    z-index: -1;
+    /* Keeps borders smooth in webkit */
+    backface-visibility: hidden;
+}
+.hex .face1:before,
+.hex .face2:before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: inherit;
+}
+
+.hex .face1 { transform: rotate(60deg); }
+
+.hex .face1:before {
+	left: 0;
+    transform-origin: left top;
+    transform: rotate(-60deg) translate(-110px, 0);
+}
+
+.hex .face2 { transform: rotate(-60deg); }
+
+.hex .face2:before {
+    right: 0;
+    transform-origin: right top;
+    transform: rotate(60deg) translate(110px, 0);
+}
+
+@media only screen and (max-width: 1200px) {
+	.hex-wrapper {
+		padding-left: 12%;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	.hex-wrapper {
+		padding-left: 11%;
+	}
+}
+
+@media only screen and (max-width: 1125px) {
+	.hex-wrapper {
+		padding-left: 9.5%;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.hex-wrapper {
+		padding-left: 13.5%;
+	}
+	#joker, #funkotj, #tbsimperial, #messi, #fpcolumpio, #glassdoraemon {
+		margin-left: 12%;
+	}
+	.hex-row {
+		clear: none;
+	}
+	#funkomt, #funkonana, #danboardmak, #acgtiger, #starburn {
+		margin-left: -9.25%;
+	}
+	#ph, #toynami {
+		display: none;
+	}
+
+}
+@media only screen and (max-width: 1050px) {
+	.hex-wrapper {
+		padding-left: 11.5%;
+	}
+}
+@media only screen and (max-width: 1025px) {
+	.container {
+		padding: 1em;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.hex-wrapper {
+		padding-left: 7%;
+	}
+	.hex .face1,
+	.hex .face2 {
+		display: none;
+	}
+	.hex {
+	    width: 250px;
+	    height: 250px;
+	    margin-top: 0px;
+	    margin-bottom: 10px;
+	}
+	.even {
+		margin-left: 0px;
+	}
+	#joker, #funkotj, #tbsimperial, #messi, #fpcolumpio, #glassdoraemon, #funkomt, #funkonana, #danboardmak, #acgtiger, #starburn {
+		margin-left: 15px;
+	}
+	p {
+		padding: 80px 20px 0;
+	}
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 17px;
+		letter-spacing: 1px;
+		width: 170px;
+		padding-bottom: 10px;
+		margin: 0 5px;
+		border-bottom: 1px solid #3d3d3d;
+	}
+	.intro {
+		padding-bottom: 0.5em;
+	}
+}
+@media only screen and (max-width: 950px) {
+	li {
+		font-size: 16px;
+		letter-spacing: 0px;
+		width: 150px;
+	}
+	.hex-wrapper {
+		padding-left: 4.5%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.hex-wrapper {
+		padding-left: 2.5%;
+	}
+}
+@media only screen and (max-width: 850px) {
+	li {
+		width: 130px;
+	}
+	.hex {
+	    width: 230px;
+	    height: 230px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.hex-wrapper {
+		padding-left: 4%;
+	}
+	.hex {
+	    width: 210px;
+	    height: 210px;
+	}
+	li {
+		width: 120px;
+	}
+
+}
+@media only screen and (max-width: 768px) {
+	p {
+		padding: 40px 20px 0;
+	}
+	.hex-wrapper {
+		padding-left: 2.5%;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.hex {
+	    width: 200px;
+	    height: 200px;
+	}
+	.hex-wrapper {
+		padding-left: 1%;
+	}
+	.one {
+		display: block;
+		margin: 0 auto;
+	}
+	.two {
+		display: none;
+	}
+	li {
+		margin-top: 1em;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.hex {
+	    width: 175px;
+	    height: 175px;
+	}
+	.hex-wrapper {
+		padding-left: 0.5%;
+	}
+	p {
+		padding: 5px 10px 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.hex {
+	    width: 160px;
+	    height: 160px;
+	}
+	.hex-wrapper {
+		padding-left: 0.5%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.hex {
+	    width: 190px;
+	    height: 190px;
+	}
+	.hex-wrapper {
+		padding-left: 0.5%;
+	}
+	li {
+		width: 180px;
+		text-align: center;
+		padding-top: 1em;
+	}
+	.nav-r, .nav-l {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.intro {
+		margin: 1em 0;
+		font-size: 2em;
+	}
+	.container {
+		padding: 0;
+	}
+	.hex-wrapper {
+		padding-left: 3px;
+	}
+	.hex {
+	    width: 145px;
+	    height: 145px;
+	    margin-left: 3px;
+	}
+	#joker, #funkotj, #tbsimperial, #messi, #fpcolumpio, #glassdoraemon, #funkomt, #funkonana, #danboardmak, #acgtiger, #starburn {
+		margin-left: 0px;
+	}
+}

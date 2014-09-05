@@ -9,6 +9,7 @@ CollectiblyGuides::Application.routes.draw do
   get "characters/gamora" => "characters#gamora"
   get "characters/drax" => "characters#drax"
   get "characters/ships" => "characters#ships"
+  get "stgcc2014" => "characters#stgcc2014", as: "stgcc2014_guide"
 
   resources :characters
 
