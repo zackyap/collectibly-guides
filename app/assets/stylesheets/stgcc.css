@@ -150,7 +150,7 @@ li {
 }
 
 #hottoys {
-	background-image: url('../Images/STGCC/HotToysLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HotToysLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -162,7 +162,7 @@ li {
 }
 
 #funko {
-	background-image: url('../Images/STGCC/FunkoLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -174,7 +174,7 @@ li {
 }
 
 #hasbro {
-	background-image: url('../Images/STGCC/HasbroLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HasbroLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -186,7 +186,7 @@ li {
 }
 
 #danboard {
-	background-image: url('../Images/STGCC/DanboardLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DanboardLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -198,7 +198,7 @@ li {
 }
 
 #zcwo {
-	background-image: url('../Images/STGCC/ZCWOLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ZCWOLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -210,7 +210,7 @@ li {
 }
 
 #pak {
-	background-image: url('../Images/STGCC/PAKLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/PAKLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -222,7 +222,7 @@ li {
 }
 
 #acgtoys {
-	background-image: url('../Images/STGCC/ACGToysLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ACGToysLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -234,7 +234,7 @@ li {
 }
 
 #damtoys {
-	background-image: url('../Images/STGCC/DamToysLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DamToysLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -246,7 +246,7 @@ li {
 }
 
 #fansproject {
-	background-image: url('../Images/STGCC/FansProjectLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FansProjectLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -258,7 +258,7 @@ li {
 }
 
 #toynami {
-	background-image: url('../Images/STGCC/ToynamiLogo.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ToynamiLogo.jpg');
     background-position: center center;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: grayscale(0%);
@@ -270,212 +270,212 @@ li {
 }
 
 #peacemaker {
-	background-image: url('../Images/STGCC/HTPeacemaker.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTPeacemaker.jpg');
     background-position: center center;
 }
 
 #sls {
-    background-image: url('../Images/STGCC/HTStarLordSpecial.jpg');
+    background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTStarLordSpecial.jpg');
     background-position: center center;
 }
 
 #marty {
-    background-image: url('../Images/STGCC/HTMartyspecial.jpg');
+    background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTMartyspecial.jpg');
     background-position: center center;
 }
 
 #im3dc {
-    background-image: url('../Images/STGCC/HTIronMandiecast.jpg');
+    background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTIronMandiecast.jpg');
     background-position: center center;
 }
 
 #opss {
-	background-image: url('../Images/STGCC/HTOptimusStarscream.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTOptimusStarscream.jpg');
     background-position: center center;
 }
 
 #ap {
-	background-image: url('../Images/STGCC/HTAncientpredator.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTAncientpredator.jpg');
     background-position: center center;
 }
 
 #python {
-	background-image: url('../Images/STGCC/HTPython.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTPython.jpg');
     background-position: center center;
 }
 
 #joker {
-	background-image: url('../Images/STGCC/HTJoker.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/HTJoker.jpg');
     background-position: center center;
 }
 
 #funkomk {
-	background-image: url('../Images/STGCC/FunkoMonkeyKing.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoMonkeyKing.jpg');
     background-position: center center;
 }
 
 #funkoms {
-	background-image: url('../Images/STGCC/FunkoMonkSha.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoMonkSha.jpg');
     background-position: center center;
 }
 
 #funkomt {
-	background-image: url('../Images/STGCC/FunkoMonkTang.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoMonkTang.jpg');
     background-position: center center;
 }
 
 #funkop {
-	background-image: url('../Images/STGCC/FunkoPigsy.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoPigsy.jpg');
     background-position: center center;
 }
 
 #funkolp {
-	background-image: url('../Images/STGCC/FunkoLittlePrince.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoLittlePrince.jpg');
     background-position: center center;
 }
 
 #funkopm {
-	background-image: url('../Images/STGCC/FunkoPrimeMinister.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoPrimeMinister.jpg');
     background-position: center center;
 }
 
 #funkotj {
-	background-image: url('../Images/STGCC/FunkoTheJudge.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoTheJudge.jpg');
     background-position: center center;
 }
 
 #funkots {
-	background-image: url('../Images/STGCC/FunkoTheSheriff.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoTheSheriff.jpg');
     background-position: center center;
 }
 
 #funkomsts {
-	background-image: url('../Images/STGCC/FunkoMindstyle.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoMindstyle.jpg');
     background-position: center center;
 }
 
 #funkoemi {
-	background-image: url('../Images/STGCC/FunkoEmi.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoEmi.jpg');
     background-position: center center;
 }
 
 #funkonana {
-	background-image: url('../Images/STGCC/FunkoNana.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoNana.jpg');
     background-position: center center;
 }
 
 #funkosakura {
-	background-image: url('../Images/STGCC/FunkoSakura.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FunkoSakura.jpg');
     background-position: center center;
 }
 
 #tbsjabba {
-	background-image: url('../Images/STGCC/TBSJabba.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/TBSJabba.jpg');
     background-position: center center;
 }
 
 #tbsimperial {
-	background-image: url('../Images/STGCC/TBSImperial.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/TBSImperial.jpg');
     background-position: center center;
 }
 
 #mgsphantom {
-	background-image: url('../Images/STGCC/MGSPhantom.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/MGSPhantom.jpg');
     background-position: center center;
 }
 
 #brprint {
-	background-image: url('../Images/STGCC/BatmanRobinPrint.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/BatmanRobinPrint.jpg');
     background-position: center center;
 }
 
 #starburn {
-	background-image: url('../Images/STGCC/Starburncomic.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/Starburncomic.jpg');
     background-position: center center;
 }
 
 #azalea {
-	background-image: url('../Images/STGCC/Azalea.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/Azalea.jpg');
     background-position: center center;
 }
 
 #puyol {
-	background-image: url('../Images/STGCC/ZCWOPuyol.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ZCWOPuyol.jpg');
     background-position: center center;
 }
 
 #messi {
-	background-image: url('../Images/STGCC/ZCWOMessi.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ZCWOMessi.jpg');
     background-position: center center;
 }
 
 #acgtiger {
-	background-image: url('../Images/STGCC/ACGTigerWong.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ACGTigerWong.jpg');
     background-position: center center;
 }
 
 #spadej {
-	background-image: url('../Images/STGCC/DamtoysSpadeJ.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DamtoysSpadeJ.jpg');
     background-position: center center;
 }
 
 #danboardsafs {
-	background-image: url('../Images/STGCC/DanboardSAFS.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DanboardSAFS.jpg');
     background-position: center center;
 }
 
 #danboardmak {
-	background-image: url('../Images/STGCC/DanboardMAK.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DanboardMAK.jpg');
     background-position: center center;
 }
 
 #danboardbanana {
-	background-image: url('../Images/STGCC/DanboardBa.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DanboardBa.jpg');
     background-position: center center;
 }
 
 #metamorblackdino {
-	background-image: url('../Images/STGCC/BlackDino.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/BlackDino.jpg');
     background-position: center center;
 }
 
 #naruto {
-	background-image: url('../Images/STGCC/Naruto.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/Naruto.jpg');
     background-position: center center;
 }
 
 #voltron {
-	background-image: url('../Images/STGCC/ToynamiVoltron.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/ToynamiVoltron.jpg');
     background-position: center center;
 }
 
 #glassdoraemon {
-	background-image: url('../Images/STGCC/GlassDoraemon.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/GlassDoraemon.jpg');
     background-position: center center;
 }
 
 #fpcolumpio {
-	background-image: url('../Images/STGCC/FPColumpio.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FPColumpio.jpg');
     background-position: center center;
 }
 
 #fpkarkrash {
-	background-image: url('../Images/STGCC/FPKarKrash.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/FPKarKrash.jpg');
     background-position: center center;
 }
 
 #hasbrotfknights {
-	background-image: url('../Images/STGCC/Hasbrotfknights.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/Hasbrotfknights.jpg');
     background-position: center center;
 }
 
 #didmartin {
-	background-image: url('../Images/STGCC/DIDMartinLutherKing.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DIDMartinLutherKing.jpg');
     background-position: center center;
 }
 
 #didmichael {
-	background-image: url('../Images/STGCC/DIDMichael.jpg');
+	background-image: url('https://s3.amazonaws.com/Collectibly-Marketing/STGCC/DIDMichael.jpg');
     background-position: center center;
 }
 
