@@ -53,3 +53,14 @@ body {
     width: 15.625em; /*should match the above value*/
 }
 
+#footer {
+  .footer-columns {
+    width: 80%;
+  }
+  .footer-column {
+    width: 25%;
+  }
+  .icon {
+    display: inline-block;
+  }
+}
