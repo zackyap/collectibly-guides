@@ -41,6 +41,25 @@ class CharactersController < ApplicationController
   end
 
   def stgcc2014
+    @title = "STGCC2014 Exclusives Collectible Guide"
+    @description = 'Here is the definitive guide to the list of STGCC 2014 exclusive collectible any true collector must check out!'
+    @url = stgcc2014_guide_url + "?utm_source=facebook&utm_medium=opengraph-share&utm_campaign=facebook-og-actions"
+    @image = "https://s3.amazonaws.com/Collectibly-Marketing/STGCC/STGCC2014FBOG.jpg"
+
+    set_meta_tags :og => {
+      :title => @title, 
+      :url  => @url,
+      :description => @description,
+      :image => @image
+    }
+    set_meta_tags :twitter => {
+      :card => "photo",
+      :site => "@collectibly",
+      :title => @title, 
+      :url => @url,
+      :description => @description,
+      image: @image
+    }
   end
 
 end

@@ -841,19 +841,62 @@ li {
 		text-align: center;
 	}
 }
-
+@media only screen and (max-width: 400px) {
+    .intro {
+        margin: 1em 0;
+        font-size: 2em;
+    }
+    .container {
+        padding: 0;
+    }
+    li {
+        width: 170px;
+        text-align: center;
+        padding-top: 1em;
+    }
+    .hex {
+        width: 180px;
+        height: 180px;
+        margin-left: 10px;
+    }
+    .hex-wrapper {
+        padding-left: 1%;
+    }
+}
+@media only screen and (max-width: 385px) {
+    li {
+        width: 160px;
+        text-align: center;
+        padding-top: 1em;
+    }
+    .hex {
+        width: 175px;
+        height: 175px;
+        margin-left: 10px;
+    }
+    .hex-wrapper {
+        padding-left: 0.5%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .hex {
+        width: 160px;
+        height: 160px;
+        margin-left: 10px;
+    }
+    .hex-wrapper {
+        padding-left: 1%;
+    }
+    li {
+        width: 150px;
+        text-align: center;
+        padding-top: 1em;
+    }
+}
 @media only screen and (max-width: 320px) {
-	.intro {
-		margin: 1em 0;
-		font-size: 2em;
-	}
-	.container {
-		padding: 0;
-	}
 	.hex {
 	    width: 145px;
 	    height: 145px;
-	    margin-left: 10px;
 	}
 	#joker, #funkotj, #tbsimperial, #messi, #fpcolumpio, #glassdoraemon, #funkomt, #funkonana, #danboardmak, #acgtiger, #starburn {
 		margin-left: 10px;
