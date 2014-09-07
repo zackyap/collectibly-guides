@@ -12,12 +12,13 @@ SitemapGenerator::Sitemap.sitemaps_host = "http://#{ENV['FOG_DIRECTORY']}.s3.ama
 # pick a namespace within your bucket to organize your maps
 SitemapGenerator::Sitemap.sitemaps_path = 'collectibly-guides-sitemaps/'
 SitemapGenerator::Sitemap.create do
-  add root_path
+  # add root_path
   # add gotg_starlord_guide_path
   # add gotg_rocket_guide_path
   # add gotg_groot_guide_path
   # add gotg_gamora_guide_path
   # add gotg_drax_guide_path
   # add gotg_ships_guide_path
+  add stgcc2014_guide_path
 end
 SitemapGenerator::Sitemap.ping_search_engines
